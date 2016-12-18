@@ -49,7 +49,7 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let vybz1 = KartelSong(videoTitle2: "Bet Mi Money", videoURL2: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/6U3ojmzAgUo\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/6U3ojmzAgUo/hqdefault.jpg")
+        let vybz1 = KartelSong(videoTitle2: "Bet Mi Money", videoURL2: "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/6U3ojmzAgUo\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/6U3ojmzAgUo/hqdefault.jpg")
         let vybz2 = KartelSong(videoTitle2: "Couldn't", videoURL2: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/2vOVx1OWvuE\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/2vOVx1OWvuE/hqdefault.jpg")
         let vybz3 = KartelSong(videoTitle2: "You Make Me Cry", videoURL2: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/z_nZL0hwObU\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/z_nZL0hwObU/hqdefault.jpg")
         let vybz4 = KartelSong(videoTitle2: "You Body Perfect", videoURL2: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/y4FgAUBjnLE\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/y4FgAUBjnLE/hqdefault.jpg")

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VideoVC: UIViewController {
+class VideoVC: UIViewController, UIWebViewDelegate {
     
     @IBOutlet var webView: UIWebView!
     @IBOutlet var selectedSongLabel: UILabel!
@@ -30,9 +30,13 @@ class VideoVC: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        webView.delegate = self
+        
         selectedSongLabel.text = chosenVybz.videoTitle
         
         webView.loadHTMLString(chosenVybz.videoURL, baseURL: nil)
+//        webView.scalesPageToFit = true
+//        webView.contentMode = UIViewContentMode.scaleAspectFit
     }
 
 }
