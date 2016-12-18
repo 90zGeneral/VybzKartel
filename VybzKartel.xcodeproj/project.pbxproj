@@ -10,10 +10,10 @@
 		D501C4601E05C8A9006FAC48 /* VybzCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D501C45F1E05C8A9006FAC48 /* VybzCell.swift */; };
 		D501C4621E05C9D3006FAC48 /* VybzKartel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D501C4611E05C9D3006FAC48 /* VybzKartel.swift */; };
 		D501C4641E05CB70006FAC48 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D501C4631E05CB70006FAC48 /* VideoVC.swift */; };
+		D501C4681E06002C006FAC48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D501C4671E06002C006FAC48 /* Assets.xcassets */; };
 		D5134C791E01F1ED00D1D6AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5134C781E01F1ED00D1D6AD /* AppDelegate.swift */; };
 		D5134C7B1E01F1ED00D1D6AD /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5134C7A1E01F1ED00D1D6AD /* MainVC.swift */; };
 		D5134C7E1E01F1ED00D1D6AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5134C7C1E01F1ED00D1D6AD /* Main.storyboard */; };
-		D5134C801E01F1ED00D1D6AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5134C7F1E01F1ED00D1D6AD /* Assets.xcassets */; };
 		D5134C831E01F1ED00D1D6AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5134C811E01F1ED00D1D6AD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +21,11 @@
 		D501C45F1E05C8A9006FAC48 /* VybzCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VybzCell.swift; sourceTree = "<group>"; };
 		D501C4611E05C9D3006FAC48 /* VybzKartel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VybzKartel.swift; sourceTree = "<group>"; };
 		D501C4631E05CB70006FAC48 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		D501C4671E06002C006FAC48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = VybzKartel/Assets.xcassets; sourceTree = "<group>"; };
 		D5134C751E01F1ED00D1D6AD /* VybzKartel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VybzKartel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5134C781E01F1ED00D1D6AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5134C7A1E01F1ED00D1D6AD /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		D5134C7D1E01F1ED00D1D6AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D5134C7F1E01F1ED00D1D6AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5134C821E01F1ED00D1D6AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5134C841E01F1ED00D1D6AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +69,7 @@
 		D5134C6C1E01F1ED00D1D6AD = {
 			isa = PBXGroup;
 			children = (
+				D501C4671E06002C006FAC48 /* Assets.xcassets */,
 				D5134C771E01F1ED00D1D6AD /* VybzKartel */,
 				D5134C761E01F1ED00D1D6AD /* Products */,
 			);
@@ -90,7 +91,6 @@
 				D501C45C1E05C80C006FAC48 /* Controller */,
 				D5134C781E01F1ED00D1D6AD /* AppDelegate.swift */,
 				D5134C7C1E01F1ED00D1D6AD /* Main.storyboard */,
-				D5134C7F1E01F1ED00D1D6AD /* Assets.xcassets */,
 				D5134C811E01F1ED00D1D6AD /* LaunchScreen.storyboard */,
 				D5134C841E01F1ED00D1D6AD /* Info.plist */,
 			);
@@ -157,7 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5134C831E01F1ED00D1D6AD /* LaunchScreen.storyboard in Resources */,
-				D5134C801E01F1ED00D1D6AD /* Assets.xcassets in Resources */,
+				D501C4681E06002C006FAC48 /* Assets.xcassets in Resources */,
 				D5134C7E1E01F1ED00D1D6AD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

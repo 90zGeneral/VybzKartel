@@ -7,3 +7,25 @@
 //
 
 import Foundation
+
+class KartelSong {
+    private var _videoTitle: String!
+    private var _videoURL: String!
+    private var _imageURL: String!
+    
+    var videoTitle: String {
+        return _videoTitle
+    }
+    var videoURL: String {
+        return _videoURL
+    }
+    var imageURL: String {
+        return _imageURL
+    }
+    
+    init(videoTitle2: String, videoURL2: String, imageURL2: String) {
+        self._videoTitle = videoTitle2
+        self._videoURL = videoURL2
+        self._imageURL = imageURL2
+    }
+}

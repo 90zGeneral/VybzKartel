@@ -9,10 +9,36 @@
 import UIKit
 
 class VybzCell: UITableViewCell {
-
+    
+    @IBOutlet var videoImagePreview: UIImageView!
+    
+    @IBOutlet var songTitle: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+    }
+    
+    func updateUI(vybzParty: KartelSong) {
+        
+        songTitle.text = vybzParty.videoTitle
+        
+        let url = URL(string: vybzParty.imageURL)!
+        
+        DispatchQueue.global().async {
+            do {
+                let urlData = try Data(contentsOf: url)
+                
+                DispatchQueue.main.async {
+                    self.videoImagePreview.image = UIImage(data: urlData)
+                }
+                
+            }catch {
+                print(error.localizedDescription)
+            }
+        }
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

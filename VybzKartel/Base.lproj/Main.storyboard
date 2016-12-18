@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -57,29 +58,47 @@
                                 <rect key="frame" x="0.0" y="256" width="320" height="312"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Vybz" rowHeight="80" id="Rm4-JB-qBh">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Vybz" rowHeight="80" id="Rm4-JB-qBh" customClass="VybzCell" customModule="VybzKartel" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rm4-JB-qBh" id="spd-i3-671">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vybzKartel" translatesAutoresizingMaskIntoConstraints="NO" id="Xxv-av-ZaH">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vybzKartel" translatesAutoresizingMaskIntoConstraints="NO" id="Xxv-av-ZaH">
                                                     <rect key="frame" x="8" y="4" width="75" height="71"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="75" id="fEs-i9-voN"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Story Of My Life" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zb1-1b-Oz6">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Of My Life" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zb1-1b-Oz6">
                                                     <rect key="frame" x="91" y="8" width="221" height="63"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Xxv-av-ZaH" secondAttribute="bottom" constant="4" id="0Fc-Cr-2CU"/>
+                                                <constraint firstItem="zb1-1b-Oz6" firstAttribute="leading" secondItem="Xxv-av-ZaH" secondAttribute="trailing" constant="8" id="1ct-bt-r20"/>
+                                                <constraint firstItem="Xxv-av-ZaH" firstAttribute="top" secondItem="spd-i3-671" secondAttribute="top" constant="4" id="Mad-la-704"/>
+                                                <constraint firstItem="zb1-1b-Oz6" firstAttribute="top" secondItem="spd-i3-671" secondAttribute="topMargin" id="NHa-4V-xJJ"/>
+                                                <constraint firstItem="zb1-1b-Oz6" firstAttribute="bottom" secondItem="spd-i3-671" secondAttribute="bottomMargin" id="UO1-vk-xOj"/>
+                                                <constraint firstItem="zb1-1b-Oz6" firstAttribute="trailing" secondItem="spd-i3-671" secondAttribute="trailingMargin" id="nHe-dt-zVU"/>
+                                                <constraint firstItem="Xxv-av-ZaH" firstAttribute="leading" secondItem="spd-i3-671" secondAttribute="leading" constant="8" id="uGE-18-EZZ"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="songTitle" destination="zb1-1b-Oz6" id="FgM-Rj-p9l"/>
+                                            <outlet property="videoImagePreview" destination="Xxv-av-ZaH" id="tkJ-ZV-JTp"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="FhU-2s-i7M"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="PsK-MS-OGW"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -97,6 +116,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="songsTableView" destination="x63-Fk-U2K" id="kCr-fJ-zav"/>
                         <segue destination="hMZ-3A-BFJ" kind="showDetail" identifier="VideoVC" id="7Kq-f4-OOn"/>
                     </connections>
                 </viewController>
@@ -123,17 +143,25 @@
                                 </constraints>
                                 <items>
                                     <navigationItem id="lou-iU-38q">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="cIe-xq-LC5"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="cIe-xq-LC5">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="showDetail" id="jcP-lt-Pc8"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLm-7y-cgo">
                                 <rect key="frame" x="0.0" y="64" width="320" height="200"/>
-                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="1gO-54-76t"/>
                                 </constraints>
                             </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="TXb-FK-xYU" userLabel="Spinner">
+                                <rect key="frame" x="142" y="146" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGC-Td-yly">
                                 <rect key="frame" x="0.0" y="272" width="320" height="50"/>
                                 <constraints>
@@ -144,7 +172,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.95770923620000004" blue="0.19247743940000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="QGC-Td-yly" secondAttribute="trailing" id="6q2-QS-jAw"/>
                             <constraint firstItem="nLm-7y-cgo" firstAttribute="top" secondItem="C78-i3-6s3" secondAttribute="bottom" id="8ij-Mi-TMe"/>
@@ -157,6 +185,11 @@
                             <constraint firstAttribute="trailing" secondItem="nLm-7y-cgo" secondAttribute="trailing" id="y3L-Ni-odG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loadingSign" destination="TXb-FK-xYU" id="9B9-qF-8el"/>
+                        <outlet property="selectedSongLabel" destination="QGC-Td-yly" id="DFv-dv-px2"/>
+                        <outlet property="webView" destination="nLm-7y-cgo" id="XNu-iV-JWZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QpO-hD-Eqv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
