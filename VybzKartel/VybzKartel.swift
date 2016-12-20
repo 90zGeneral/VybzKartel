@@ -9,6 +9,8 @@
 import Foundation
 
 class KartelSong {
+    
+    //Private variables not accessible outside of this class
     private var _videoTitle: String!
     private var _videoURL: String!
     private var _imageURL: String!
