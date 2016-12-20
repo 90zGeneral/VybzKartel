@@ -10,9 +10,9 @@ import UIKit
 
 class VideoVC: UIViewController, UIWebViewDelegate {
     
+    //Outlets
     @IBOutlet var webView: UIWebView!
     @IBOutlet var selectedSongLabel: UILabel!
-    
     @IBOutlet var loadingSign: UIActivityIndicatorView!
     
     private var _chosenVybz: KartelSong!

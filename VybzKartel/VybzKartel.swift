@@ -13,6 +13,7 @@ class KartelSong {
     private var _videoURL: String!
     private var _imageURL: String!
     
+    //Getters to grab the values passed into the initializer
     var videoTitle: String {
         return _videoTitle
     }

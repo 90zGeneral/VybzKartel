@@ -10,8 +10,8 @@ import UIKit
 
 class VybzCell: UITableViewCell {
     
+    //Outlets
     @IBOutlet var videoImagePreview: UIImageView!
-    
     @IBOutlet var songTitle: UILabel!
     
     override func awakeFromNib() {
@@ -20,6 +20,7 @@ class VybzCell: UITableViewCell {
         
     }
     
+    //To update the cells
     func updateUI(vybzParty: KartelSong) {
         
         songTitle.text = vybzParty.videoTitle
@@ -39,12 +40,6 @@ class VybzCell: UITableViewCell {
             }
         }
         
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }
