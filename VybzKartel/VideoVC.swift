@@ -45,8 +45,6 @@ class VideoVC: UIViewController, UIWebViewDelegate {
         let urlReq = URLRequest(url: url)
         webView.loadRequest(urlReq)
     }
-    
-    //Git Commit Message: Fixed the webView content size and position to be equal to the webView's size and centered perfectly by creating a global variable for webView to be accessible in the MainVC as a string interpolation on the videoURL value for width and height, then separated the string to get the exact youtube url. Also, changed from loadHTMLString to loadRequest."
 }
 
 //Global access point for the webView property of this VideoVC class
