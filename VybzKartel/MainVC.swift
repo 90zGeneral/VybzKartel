@@ -44,23 +44,21 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
     }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         //Create new instances of the KartelSong class with values for each property
-        let vybz1 = KartelSong(videoTitle2: "Bet Mi Money", videoURL2: "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/6U3ojmzAgUo\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/6U3ojmzAgUo/hqdefault.jpg")
-        let vybz2 = KartelSong(videoTitle2: "Couldn't", videoURL2: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/2vOVx1OWvuE\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/2vOVx1OWvuE/hqdefault.jpg")
-        let vybz3 = KartelSong(videoTitle2: "You Make Me Cry", videoURL2: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/z_nZL0hwObU\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/z_nZL0hwObU/hqdefault.jpg")
-        let vybz4 = KartelSong(videoTitle2: "You Body Perfect", videoURL2: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/y4FgAUBjnLE\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/y4FgAUBjnLE/hqdefault.jpg")
-        let vybz5 = KartelSong(videoTitle2: "Tell Me If You Like IT", videoURL2: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/m81NVWbekiI\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/m81NVWbekiI/hqdefault.jpg")
-        let vybz6 = KartelSong(videoTitle2: "Mile High Club", videoURL2: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/-8KDvdh9C1Y\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/-8KDvdh9C1Y/hqdefault.jpg")
-        let vybz7 = KartelSong(videoTitle2: "Bay Bay", videoURL2: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/mb9QlhTChuw\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/mb9QlhTChuw/hqdefault.jpg")
-        let vybz8 = KartelSong(videoTitle2: "Enchanting", videoURL2: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/MrYRdRUjqJM?list=RDMrYRdRUjqJM\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/MrYRdRUjqJM/hqdefault.jpg")
-        let vybz9 = KartelSong(videoTitle2: "Conjugal Visit", videoURL2: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/INAqa1PUfTk?list=RDMrYRdRUjqJM\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/INAqa1PUfTk/hqdefault.jpg")
-        let vybz10 = KartelSong(videoTitle2: "Ice Queen", videoURL2: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Uy3ISTGJSvk?list=RDMrYRdRUjqJM\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/Uy3ISTGJSvk/hqdefault.jpg")
+        let vybz1 = KartelSong(videoTitle2: "Bet Mi Money", videoURL2: "<iframe width=\"\(accessVideoVC?.frame.width)\" height=\"\(accessVideoVC?.frame.height)\" src=\"https://www.youtube.com/embed/6U3ojmzAgUo\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/6U3ojmzAgUo/hqdefault.jpg")
+        let vybz2 = KartelSong(videoTitle2: "Couldn't", videoURL2: "<iframe width=\"\(accessVideoVC?.frame.width)\" height=\"\(accessVideoVC?.frame.height)\" src=\"https://www.youtube.com/embed/2vOVx1OWvuE\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/2vOVx1OWvuE/hqdefault.jpg")
+        let vybz3 = KartelSong(videoTitle2: "You Make Me Cry", videoURL2: "<iframe width=\"\(accessVideoVC?.frame.width)\" height=\"\(accessVideoVC?.frame.height)\" src=\"https://www.youtube.com/embed/z_nZL0hwObU\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/z_nZL0hwObU/hqdefault.jpg")
+        let vybz4 = KartelSong(videoTitle2: "You Body Perfect", videoURL2: "<iframe width=\"\(accessVideoVC?.frame.width)\" height=\"\(accessVideoVC?.frame.height)\" src=\"https://www.youtube.com/embed/y4FgAUBjnLE\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/y4FgAUBjnLE/hqdefault.jpg")
+        let vybz5 = KartelSong(videoTitle2: "Tell Me If You Like IT", videoURL2: "<iframe width=\"\(accessVideoVC?.frame.width)\" height=\"\(accessVideoVC?.frame.height)\" src=\"https://www.youtube.com/embed/m81NVWbekiI\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/m81NVWbekiI/hqdefault.jpg")
+        let vybz6 = KartelSong(videoTitle2: "Mile High Club", videoURL2: "<iframe width=\"\(accessVideoVC?.frame.width)\" height=\"\(accessVideoVC?.frame.height)\" src=\"https://www.youtube.com/embed/-8KDvdh9C1Y\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/-8KDvdh9C1Y/hqdefault.jpg")
+        let vybz7 = KartelSong(videoTitle2: "Bay Bay", videoURL2: "<iframe width=\"\(accessVideoVC?.frame.width)\" height=\"\(accessVideoVC?.frame.height)\" src=\"https://www.youtube.com/embed/mb9QlhTChuw\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/mb9QlhTChuw/hqdefault.jpg")
+        let vybz8 = KartelSong(videoTitle2: "Enchanting", videoURL2: "<iframe width=\"\(accessVideoVC?.frame.width)\" height=\"\(accessVideoVC?.frame.height)\" src=\"https://www.youtube.com/embed/MrYRdRUjqJM?list=RDMrYRdRUjqJM\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/MrYRdRUjqJM/hqdefault.jpg")
+        let vybz9 = KartelSong(videoTitle2: "Conjugal Visit", videoURL2: "<iframe width=\"\(accessVideoVC?.frame.width)\" height=\"\(accessVideoVC?.frame.height)\" src=\"https://www.youtube.com/embed/INAqa1PUfTk?list=RDMrYRdRUjqJM\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/INAqa1PUfTk/hqdefault.jpg")
+        let vybz10 = KartelSong(videoTitle2: "Ice Queen", videoURL2: "<iframe width=\"\(accessVideoVC?.frame.width)\" height=\"\(accessVideoVC?.frame.height)\" src=\"https://www.youtube.com/embed/Uy3ISTGJSvk?list=RDMrYRdRUjqJM\" frameborder=\"0\" allowfullscreen></iframe>", imageURL2: "http://i3.ytimg.com/vi/Uy3ISTGJSvk/hqdefault.jpg")
         
         //Append each new instance to the songArray
         songsArray += [vybz1, vybz2, vybz3, vybz4, vybz5, vybz6, vybz7, vybz8, vybz9, vybz10]
