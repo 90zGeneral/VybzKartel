@@ -44,6 +44,17 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
     }
     
+    //Preparing the filtering tabs
+    @IBAction func classics(_ sender: Any) {
+    }
+    
+    @IBAction func topSongs(_ sender: Any) {
+    }
+    
+    @IBAction func newSongs(_ sender: Any) {
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
