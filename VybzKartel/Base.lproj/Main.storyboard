@@ -33,20 +33,20 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUp-e8-2ZG">
                                         <rect key="frame" x="0.0" y="0.0" width="106.5" height="30"/>
-                                        <state key="normal" title="Classics">
-                                            <color key="titleColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="classics:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ft1-no-Dnj"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgV-Na-U60">
-                                        <rect key="frame" x="106.5" y="0.0" width="107" height="30"/>
                                         <state key="normal" title="Top Songs">
                                             <color key="titleColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="topSongs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jlf-4M-98d"/>
+                                            <action selector="topSongs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PUT-mS-S3N"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgV-Na-U60">
+                                        <rect key="frame" x="106.5" y="0.0" width="107" height="30"/>
+                                        <state key="normal" title="Classics">
+                                            <color key="titleColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="classics:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fl1-T8-xG1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71E-0K-y9U">
@@ -55,7 +55,7 @@
                                             <color key="titleColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="newSongs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aKb-WO-bpI"/>
+                                            <action selector="newSongs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c1x-Dt-4bM"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -71,7 +71,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rm4-JB-qBh" id="spd-i3-671">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vybzKartel" translatesAutoresizingMaskIntoConstraints="NO" id="Xxv-av-ZaH">
