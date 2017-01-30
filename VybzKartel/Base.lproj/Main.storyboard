@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,29 +33,29 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUp-e8-2ZG">
                                         <rect key="frame" x="0.0" y="0.0" width="106.5" height="30"/>
-                                        <state key="normal" title="Top Songs">
+                                        <state key="normal" title="Gyal Songs">
                                             <color key="titleColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="topSongs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PUT-mS-S3N"/>
+                                            <action selector="gyalSongs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ARh-Gt-6AH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgV-Na-U60">
                                         <rect key="frame" x="106.5" y="0.0" width="107" height="30"/>
-                                        <state key="normal" title="Classics">
+                                        <state key="normal" title="Gun Songs">
                                             <color key="titleColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="classics:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fl1-T8-xG1"/>
+                                            <action selector="gunSongs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UEV-eF-cBv"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71E-0K-y9U">
                                         <rect key="frame" x="213.5" y="0.0" width="106.5" height="30"/>
-                                        <state key="normal" title="New Songs">
+                                        <state key="normal" title="Ghetto Songs">
                                             <color key="titleColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="newSongs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c1x-Dt-4bM"/>
+                                            <action selector="ghettoSongs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D8o-ip-P9z"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -71,7 +71,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rm4-JB-qBh" id="spd-i3-671">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vybzKartel" translatesAutoresizingMaskIntoConstraints="NO" id="Xxv-av-ZaH">
@@ -177,7 +177,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.99776309730000001" green="0.95166903729999996" blue="0.24206757549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="QGC-Td-yly" secondAttribute="trailing" id="6q2-QS-jAw"/>
                             <constraint firstItem="nLm-7y-cgo" firstAttribute="top" secondItem="C78-i3-6s3" secondAttribute="bottom" id="8ij-Mi-TMe"/>

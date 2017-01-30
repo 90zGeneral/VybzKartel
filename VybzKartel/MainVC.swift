@@ -45,13 +45,13 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     //Preparing the filtering tabs
-    @IBAction func topSongs(_ sender: Any) {
+    @IBAction func gyalSongs(_ sender: Any) {
     }
     
-    @IBAction func classics(_ sender: Any) {
+    @IBAction func gunSongs(_ sender: Any) {
     }
     
-    @IBAction func newSongs(_ sender: Any) {
+    @IBAction func ghettoSongs(_ sender: Any) {
     }
     
     
