@@ -13,6 +13,7 @@ class VideoVC: UIViewController, UIWebViewDelegate {
     //Outlets
     @IBOutlet var webView: UIWebView!
     @IBOutlet var selectedSongLabel: UILabel!
+    @IBOutlet weak var selectedSongImage: UIImageView!
     @IBOutlet var loadingSign: UIActivityIndicatorView!
     
     private var _chosenVybz: KartelSong!
@@ -33,6 +34,22 @@ class VideoVC: UIViewController, UIWebViewDelegate {
         webView.delegate = self
         
         selectedSongLabel.text = chosenVybz.videoTitle
+
+        let chosenImgURL = URL(string: chosenVybz.imageURL)!
+        
+        DispatchQueue.global().async {
+            do {
+                let urlData = try Data(contentsOf: chosenImgURL)
+                
+                DispatchQueue.main.async {
+                    self.selectedSongImage.image = UIImage(data: urlData)
+                }
+                
+            }catch {
+                print(error.localizedDescription)
+            }
+        }
+        
         
 //        webView.loadHTMLString(chosenVybz.videoURL, baseURL: nil)
         

@@ -71,7 +71,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rm4-JB-qBh" id="spd-i3-671">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vybzKartel" translatesAutoresizingMaskIntoConstraints="NO" id="Xxv-av-ZaH">
@@ -176,6 +176,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XHb-Jz-s7L">
+                                <rect key="frame" x="60" y="322" width="200" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Ela-aP-j9c"/>
+                                    <constraint firstAttribute="height" constant="180" id="chT-Yz-uCO"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -184,6 +191,8 @@
                             <constraint firstItem="C78-i3-6s3" firstAttribute="top" secondItem="p5Q-J6-DQF" secondAttribute="bottom" id="9cI-HS-BOR"/>
                             <constraint firstItem="C78-i3-6s3" firstAttribute="leading" secondItem="4fd-Ae-UAN" secondAttribute="leading" id="GII-ux-ncZ"/>
                             <constraint firstItem="QGC-Td-yly" firstAttribute="leading" secondItem="4fd-Ae-UAN" secondAttribute="leading" id="UEG-9d-Bes"/>
+                            <constraint firstItem="XHb-Jz-s7L" firstAttribute="top" secondItem="QGC-Td-yly" secondAttribute="bottom" id="WQn-jg-pjv"/>
+                            <constraint firstItem="XHb-Jz-s7L" firstAttribute="centerX" secondItem="4fd-Ae-UAN" secondAttribute="centerX" id="Ygy-ex-g4m"/>
                             <constraint firstItem="QGC-Td-yly" firstAttribute="top" secondItem="nLm-7y-cgo" secondAttribute="bottom" constant="8" id="fSt-Wh-lCL"/>
                             <constraint firstAttribute="trailing" secondItem="C78-i3-6s3" secondAttribute="trailing" id="fvO-Gb-2NP"/>
                             <constraint firstItem="nLm-7y-cgo" firstAttribute="leading" secondItem="4fd-Ae-UAN" secondAttribute="leading" id="oev-u7-lFc"/>
@@ -191,6 +200,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="selectedSongImage" destination="XHb-Jz-s7L" id="7ZH-4b-9RU"/>
                         <outlet property="selectedSongLabel" destination="QGC-Td-yly" id="DFv-dv-px2"/>
                         <outlet property="webView" destination="nLm-7y-cgo" id="XNu-iV-JWZ"/>
                     </connections>
