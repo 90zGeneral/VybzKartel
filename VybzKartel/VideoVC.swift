@@ -11,10 +11,10 @@ import UIKit
 class VideoVC: UIViewController, UIWebViewDelegate {
     
     //Outlets
-    @IBOutlet var webView: UIWebView!
-    @IBOutlet var selectedSongLabel: UILabel!
+    @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var selectedSongLabel: UILabel!
     @IBOutlet weak var selectedSongImage: UIImageView!
-    @IBOutlet var loadingSign: UIActivityIndicatorView!
+    @IBOutlet weak var loadingSign: UIActivityIndicatorView! /////////////////////////////////
     
     private var _chosenVybz: KartelSong!
     
@@ -29,8 +29,6 @@ class VideoVC: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
         webView.delegate = self
         
         selectedSongLabel.text = chosenVybz.videoTitle
@@ -61,6 +59,17 @@ class VideoVC: UIViewController, UIWebViewDelegate {
         let url = URL(string: dividedStringArray2[0])!
         let urlReq = URLRequest(url: url)
         webView.loadRequest(urlReq)
+
+    }
+    
+    //These Delegate methods are called wherever there is an instance of a webView
+    func webViewDidStartLoad(_ webView: UIWebView) {
+        loadingSign.hidesWhenStopped = true
+        loadingSign.startAnimating()
+    }
+    
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        loadingSign.stopAnimating()
     }
 }
 

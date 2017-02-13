@@ -167,6 +167,14 @@
                                     <constraint firstAttribute="height" constant="200" id="1gO-54-76t"/>
                                 </constraints>
                             </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="qNA-yw-YNx">
+                                <rect key="frame" x="142" y="146" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="3Hx-RU-NA1"/>
+                                    <constraint firstAttribute="width" constant="37" id="VfS-dy-mkB"/>
+                                </constraints>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGC-Td-yly">
                                 <rect key="frame" x="0.0" y="272" width="320" height="50"/>
                                 <constraints>
@@ -195,11 +203,14 @@
                             <constraint firstItem="XHb-Jz-s7L" firstAttribute="centerX" secondItem="4fd-Ae-UAN" secondAttribute="centerX" id="Ygy-ex-g4m"/>
                             <constraint firstItem="QGC-Td-yly" firstAttribute="top" secondItem="nLm-7y-cgo" secondAttribute="bottom" constant="8" id="fSt-Wh-lCL"/>
                             <constraint firstAttribute="trailing" secondItem="C78-i3-6s3" secondAttribute="trailing" id="fvO-Gb-2NP"/>
+                            <constraint firstItem="qNA-yw-YNx" firstAttribute="centerY" secondItem="nLm-7y-cgo" secondAttribute="centerY" id="lpb-u4-oNK"/>
                             <constraint firstItem="nLm-7y-cgo" firstAttribute="leading" secondItem="4fd-Ae-UAN" secondAttribute="leading" id="oev-u7-lFc"/>
+                            <constraint firstItem="qNA-yw-YNx" firstAttribute="centerX" secondItem="nLm-7y-cgo" secondAttribute="centerX" id="qxk-GJ-8J9"/>
                             <constraint firstAttribute="trailing" secondItem="nLm-7y-cgo" secondAttribute="trailing" id="y3L-Ni-odG"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loadingSign" destination="qNA-yw-YNx" id="Lue-n9-Jwa"/>
                         <outlet property="selectedSongImage" destination="XHb-Jz-s7L" id="7ZH-4b-9RU"/>
                         <outlet property="selectedSongLabel" destination="QGC-Td-yly" id="DFv-dv-px2"/>
                         <outlet property="webView" destination="nLm-7y-cgo" id="XNu-iV-JWZ"/>
