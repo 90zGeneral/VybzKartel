@@ -21,7 +21,7 @@
 		D501C45F1E05C8A9006FAC48 /* VybzCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VybzCell.swift; sourceTree = "<group>"; };
 		D501C4611E05C9D3006FAC48 /* VybzKartel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VybzKartel.swift; sourceTree = "<group>"; };
 		D501C4631E05CB70006FAC48 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
-		D501C4671E06002C006FAC48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = VybzKartel/Assets.xcassets; sourceTree = "<group>"; };
+		D501C4671E06002C006FAC48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5134C751E01F1ED00D1D6AD /* VybzKartel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VybzKartel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5134C781E01F1ED00D1D6AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5134C7A1E01F1ED00D1D6AD /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -69,7 +69,6 @@
 		D5134C6C1E01F1ED00D1D6AD = {
 			isa = PBXGroup;
 			children = (
-				D501C4671E06002C006FAC48 /* Assets.xcassets */,
 				D5134C771E01F1ED00D1D6AD /* VybzKartel */,
 				D5134C761E01F1ED00D1D6AD /* Products */,
 			);
@@ -92,6 +91,7 @@
 				D5134C781E01F1ED00D1D6AD /* AppDelegate.swift */,
 				D5134C7C1E01F1ED00D1D6AD /* Main.storyboard */,
 				D5134C811E01F1ED00D1D6AD /* LaunchScreen.storyboard */,
+				D501C4671E06002C006FAC48 /* Assets.xcassets */,
 				D5134C841E01F1ED00D1D6AD /* Info.plist */,
 			);
 			path = VybzKartel;
@@ -129,7 +129,7 @@
 				TargetAttributes = {
 					D5134C741E01F1ED00D1D6AD = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 3983Y6QL49;
+						DevelopmentTeam = QG9HYMA775;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -299,10 +299,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3983Y6QL49;
+				DEVELOPMENT_TEAM = QG9HYMA775;
 				INFOPLIST_FILE = VybzKartel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Italyte.VybzKartel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Italytes.VybzKartel1776;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -312,10 +312,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3983Y6QL49;
+				DEVELOPMENT_TEAM = QG9HYMA775;
 				INFOPLIST_FILE = VybzKartel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Italyte.VybzKartel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Italytes.VybzKartel1776;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
