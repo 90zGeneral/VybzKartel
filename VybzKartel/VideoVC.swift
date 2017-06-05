@@ -14,7 +14,7 @@ class VideoVC: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var selectedSongLabel: UILabel!
     @IBOutlet weak var selectedSongImage: UIImageView!
-    @IBOutlet weak var loadingSign: UIActivityIndicatorView! /////////////////////////////////
+    @IBOutlet weak var loadingSign: UIActivityIndicatorView!
     
     private var _chosenVybz: KartelSong!
     
@@ -47,9 +47,6 @@ class VideoVC: UIViewController, UIWebViewDelegate {
                 print(error.localizedDescription)
             }
         }
-        
-        
-//        webView.loadHTMLString(chosenVybz.videoURL, baseURL: nil)
         
         //Break up the videoURL string to get the url
         let dividedStringArray1 = chosenVybz.videoURL.components(separatedBy: "src=\"")
